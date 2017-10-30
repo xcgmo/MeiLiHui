@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="原注册页面.css">
+	</head>
+	<body>
+		<div class="login_container" style="background: rgba(0, 0, 0, 0) url(&quot;https://cdn15.mei.com/category/20170526/20170526172702718.jpg@1000w_827h_2e_100q&quot;) no-repeat scroll 0% 0%;">
+        <div class="login_header" onclick="javascript:window.location.href = '/'">
+        </div>
+        <div class="login_content">
+        <div class="login_main">
+            <div class="hydl_regsiter">
+                <h2>免费注册</h2>
+                <span data-spm="2028705">已注册？<a href="http://www.mei.com/user/tologinpage">登录</a></span>
+            </div>
+            	<div class="newPeople"><p><span style="color: rgb(255, 0, 0);">新客专享 1000元现金券礼包</span></p></div>
+         <div class="hydl_loginbar">
+         	<input value="regist" id="pages" type="hidden">
+         	<input value="yes" name="isGetRemind" type="hidden">
+            <ul>
+                <li>
+                    <span>账户名:</span><input style="width:253px;" name="userAccount" id="userAccount" value="手机号/邮箱" onblur="checkFormInfo('regist','yes','','','account')" onfocus="removeContent()" maxlength="64" type="text">
+                    <p id="Act_error"></p>
+                    <div id="EmailIsHad" class="hidstyle">
+                    <p>该邮箱已存在，请更换其他手机号/邮箱或尝试<a href="http://www.mei.com/user/tologinpage">登录</a></p>
+                    </div>
+                    <div id="TelIsHad" class="hidstyle">
+                    <p>该手机号已存在，请更换其他手机号/邮箱或尝试<a href="http://www.mei.com/user/tologinpage">登录</a></p>
+                    </div>
+                </li>
+                <li>
+                	<span>密码:</span><input style="width:253px;display:block;" name="passWordtext" id="passWordtext" value="请输入6-20个字符" onfocus="removePwdContent()" maxlength="20" type="text">
+                	<input style="width:253px; display:none;" name="passWord" id="passWord" onblur="checkFormInfo('regist','no','','','pwd')" maxlength="20" onkeyup="pwStrength(this.value)" type="password">
+                	<p id="Pwd_error"></p>
+                	<p id="lowPwd"></p>
+                    <div class="login_safety hidstyle" id="lowMHight">
+                        <span id="low">低</span>
+                        <span id="middle">中</span>
+                        <span id="height">高</span>
+                    </div>
+                </li>
+                <li><span>确认密码:</span><input style="width:253px;" name="rpassWord" onblur="checkFormInfo('regist','no','','','rpwd')" maxlength="20" type="password">
+                	<p id="RPwd_error"></p>
+                	<p id="switch_error"></p>
+                </li>
+                <li id="rdm_img" class="hidestyle showstyle"><span>验证码:</span>
+                	<input class="yanzheng" name="random" id="randomImg" onkeyup="value=value.replace(/[^\w/]/ig,'')" maxlength="6" onblur="checkFormInfo('regist','no','','','random')" type="text">
+                    <img id="rdm" src="/user/getRandom?0.5057560120242032" onclick="getResetRandom('',this)" style=" border: 1px solid #999;cursor: pointer;">
+                	<p class="Rdm_error" id="Rdm_error"></p>
+                </li>
+                <li id="rdm_tel" class="showstyle"><span>短信验证码:</span><input class="yanzheng" onkeyup="value=value.replace(/[^\w/]/ig,'')" id="validateCode" name="random1" maxlength="5" onblur="checkFormInfo('regist','no','','','random1')" type="text">
+                <a style="cursor: pointer;" onclick="sendMessageCode();" class="sendRandm"><img id="sendRandm" src="https://cdn11.mei.com/images/login/img_03.png"></a>
+                <a style="cursor: pointer;" onclick="sendMessageCode();" class="rsendRandm hidstyle"><img id="rsendRandm" src="https://cdn11.mei.com/images/login/img_04.png"></a>
+                <div class="ma hidstyle"><b class="times">60</b>秒后重新获取验证码</div>
+                	<p class="Rdm_error" id="Rdm_error"></p>
+                </li>
+                <input value="yes" id="isGetRemind" type="hidden">
+                <input value="" id="is_check_code_show_reg" type="hidden">
+                <input value="1" id="is_reg" type="hidden">
+            </ul>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="hydl_btn">
+            	<a id="regist" onclick="toSubmit('regist','no','','','')" style="cursor: pointer;">立即注册</a>
+            </div>
+            <div class="sjzc_login">
+            	<p data-spm="2028709">点击立即注册即表示同意魅力惠<a href="http://www.mei.com/Hrbeforepage/USEGUIZE.html"><span>使用条款</span></a>
+            	</p><p><span id="chooseRemind" class="selected chengepst" onclick="isGetRemind()">复选框</span>您将收到魅力惠每日最新上线邮件</p>
+            </div>
+            <div style="clear:both;"></div>
+            <div class="xian"></div>
+            <div class="erweima">
+                <img src="https://cdn11.mei.com/images/login/imges_saomiao.jpg">
+              <p>扫描二维码或发送短信<br>“MLH”到“12114”<br>下载APP尊享独家优惠</p>
+            </div>
+          
+         </div>  
+                    
+        </div>
+         <div class="footer_advantage">
+                <ul>
+                <li><a class="a1">100%正品保证</a></li>
+                    <li><a class="a2" href="http://www.mei.com/myConponsMessage/DDPS.html">满688免运费</a></li>
+                    <li><a class="a3" href="http://www.mei.com/myConponsMessage/SHFW.html">7天无条件退货</a></li>
+                    <li><a class="a4" href="http://www.mei.com/myConponsMessage/THHD.html">超值折扣</a></li>
+                    <li><a class="a5" href="http://www.mei.com/Hrbeforepage/ZCZC.html">9点限时闪购</a></li>
+                    <li class="footer_advantage_right"><a class="a6" href="http://www.mei.com/Hrbeforepage/LXWM.html">400-664-6698</a></li>
+                </ul>
+          </div>
+          <p class="footer_copyright">COPYRIGHT©2016 杭州魅俪信息技术有限公司版权所有 &nbsp;&nbsp;&nbsp;&nbsp;浙ICP备16004860号-1</p>
+    </div>
+	</body>
+</html>

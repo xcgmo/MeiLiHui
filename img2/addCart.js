@@ -1,0 +1,1 @@
+function addCart(c,e,d,g,b,f){var a;$.ajax({type:"POST",dataType:"json",url:c+"/cart/insert",async:false,data:{productId:e,eventId:d,brandId:g,shoppingNum:b,DETAIL_SOURCE_FROM:f},success:function(h){a=h}});return a};
