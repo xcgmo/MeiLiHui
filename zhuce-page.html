@@ -1,61 +1,92 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>注册页面</title>
-		<link rel="stylesheet" type="text/css" href="css/zhuce.css">
-	</head>
-	<body>
-		<div class="zhuce">
-			<!--第一部分---logo-->
-			<div class="one">
-				<div class="one-1"></div>
-				<div class="one-2"></div>
-			</div>
-			<div class="login">
-				<div class="login-box1">
-					<h2>免费注册</h2>
-					<span>已注册？<a href="" style="color:red;">登录</a></span>
-				</div>
-				<p class="login-box2">新客专享 1000元现金券礼包</p>
-				<ul class="login-box3">
-					<li>
-						<span>账户名：</span><input type="text" value="手机号/邮箱" name="userName" id="userId"><br/>
-						<span class="userNameStr" id="userNameStr01">该邮箱已存在，请更换其他手机号/邮箱或尝试<a href="">登录</a></span>
-						<span class="userNameStr" id="userNameStr02">该手机已存在，请更换其他手机号/邮箱或尝试<a href="">登录</a></span>
-					</li>
-					<li>
-						<span>密码：</span><input type="text" value="请输入6-20个字符" name="userPass" id="userPass"><br/>
-						<div>此链接不安全，在此页面输入的登录信息可以被窃取。<span>详细了解</span></div>
-						<div class="safty">
-							<span>低</span>
-							<span>中</span>
-							<span>高</span>
-						</div>
-					</li>
-					<li>
-						<span>确认密码：</span><input type="text"  name="userName" id="userId"><br/>
-						<div>此链接不安全，在此页面输入的登录信息可以被窃取。<a>详细了解</a></div>
-					</li>
-					<li>
-						<span>验证码：</span><input type="text"  name="userName" id="userId"><input type="text" class="checkMa" id="checkMa"/><br/>
-					</li>
-					<li>
-						<span>短信验证码：</span><input type="text"  name="userName" id="userId"><input type="text" id="checkMaTel" value="获取验证码" /><br/>
-					</li>
-				</ul>
-					<input type="button" name="zhuce" id="zhuce" value="立即注册" />
-					<div>
-						<p>点击立即注册即表示同意魅力惠<a href="">使用条款</a></p>
-						</p><p><span id="chooseRemind" class="selected chengepst" onclick="isGetRemind()">复选框</span>您将收到魅力惠每日最新上线邮件</p>
-					</div>
+<head>
+	<meta charset="UTF-8">
+	<title>注册页面</title>
+	<link rel="stylesheet" type="text/css" href="css/zhuce.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+<body>
+<div class="zhuce">
+	<!--第一部分---logo-->
+	<div class="one">
+	<div class="one-1"></div>
+		<div class="one-2"></div>
+	</div>
+	
+	<!--注册-->
+	<div class="login">
+		<div class="login-box1">
+			<h2>免费注册</h2>
+			<span>已注册？<a href="denglu.html" style="color:red;">登录</a></span>
+		</div>
+		<p class="login-box2">新客专享 1000元现金券礼包</p>
+		<ul class="login-box3">
+			<li>
+				<span>账户名：</span><input type="text" value="手机号/邮箱" name="userName" id="userId" class="input01"><br/>
+			</li>
+			<li>
+				<span>密码：</span><input type="text" value="请输入6-20个字符" name="userPass" id="userPass" class="input01"><br/>
+						
+				<!--<div class="safty">
+					<span>低</span>
+					<span>中</span>
+					<span>高</span>
+   			    </div>-->
+			</li>
+			<li>
+				<span>确认密码：</span><input type="text"  name="userName" id="userPass" class="input01"><br/>
+						
+			</li>
+			<li>
+				<span>验证码：</span>
+				<!--<div class="li-checkMa">-->
+				<input type="text"  name="userCheck" id="userCheckM" class="input02">
+				<input type="text"  id="checkMa"  class="input03"/ ><!--</div>--><br/>
+			</li>
+			<li>
+				<span>短信验证码：</span>
+				<!--<div class="li-checkMa">-->
+				<input type="text"  name="userTelName" id="userTelName" class="input02">
+				<input type="text" id="checkMaTel" value="获取验证码"  class="input03"/><!--</div>--><br/>
+			</li>
+			<li>
+				<input type="button" name="zhuce" id="zhuce" value="立即注册" class="input04" />
+			</li>
+			<p>点击立即注册即表示同意魅力惠<a href="">使用条款</a></p>
+			<p><input type="checkbox"></span>您将收到魅力惠每日最新上线邮件</p>
 			
+		</ul>
+			
+			
+		<div class="login-box4">
+			<img src="https://cdn11.mei.com/images/login/imges_saomiao.jpg" alt="" />
+			<div class="erWeiMa">扫描二维码或发送短信“MLH”到“12114”下载APP尊享独家优惠</div>
+		</div>
+		
+		</div>	
+		
+		
+		
+		
+		<!--foot-->
+		<div class="footer" style="background: #fff;margin:0 auto;width:999px;height: 130px;margin-top: 160px;" >	
+				<ul class="footer-box1">
+					<li><a class="a1">100%正品保证</a></li>
+					<li><a class="a2">满688免运费</a></li>
+					<li><a class="a3">七天无条件退货</a></li>
+					<li><a class="a4">超值折扣</a></li>
+					<li><a class="a5">9点限时闪购</a></li>
+					<li><a class="a6">400-664-223</a></li>
+				</ul>
+				<p class="footer-p1"><span>COPYRIGHT©2016  杭州魅俪信息技术有限公司版权所有</span>浙ICP备16004860号-1</p>
+		</div>
 				
 				
 				
 				
 				
-			</div>
+			
 		</div>
 	</body>
 </html>

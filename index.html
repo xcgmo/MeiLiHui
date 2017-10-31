@@ -43,7 +43,8 @@
 		</div>
 		
 		<!--nav-->
-		<div class="nav">
+		<div class="nav" id="nav">
+			<div class="nav-box">
 			<div class="nav-box1">
 				<a href="" style="color:#ff0000">首页</a>
 				<a href="">女士</a>
@@ -51,7 +52,7 @@
 				<a href="">美妆</a>
 				<a href="">家居</a>
 				<a href="xiangqingye.html">婴童</a>
-				<a href="" id="title-haiwai">海外</a>
+				<a href="" id="title-haiwai" class="hai-a">海外</a>
 				<a href="">即将推出</a>
 				<img src="img/4.jpg" alt="" />
 			</div>
@@ -61,6 +62,8 @@
 				<a href=""><img src="img/3.jpg"/></a>
 				<a href="">￥0.00</a>
 			</div>
+			</div>
+			
 			<div class="titleTop">
 					<ul class="title-1">
 					<h3>热门活动</h3>
@@ -85,7 +88,7 @@
 						<li>童装</li>
 				</ul>
 			</div>
-			<ul class="title-1 title-11">
+			<ul class="title-1 title-11" id="title-ll">
 					<h3>热门活动</h3>
 						<li>PORTS&nbsp;一见倾心都市女装</li>
 						<li>CHRISTIAN LOUBOUTIN 小红鞋 &amp; GUCCI 等&nbsp;服装鞋履包袋</li>
@@ -566,16 +569,35 @@
 				<p class="footer-p1"><span>COPYRIGHT©2016  杭州魅俪信息技术有限公司版权所有</span>浙ICP备16004860号-1</p>
 				<div class="footer-box3"><img src="img/icon_badge.png" alt="" /></div>
 		</div>
+		
+		<!--回到顶部----css在index。css里边-->
+		<div class="HuiDing">
+			<div class="H-box1">
+				<p style="color:red;">100%</p>
+				<p style="color:white;">正品保证</p>
+			</div>
+			<h3>下载APP</h3>
+			<img src="img/QR_code.png" alt="" />
+			<h3>微信公众号</h3>
+			<img src="img/wechat-2dcode.png" alt="" / style="width:80px;height:80px;">
+			<div class="H-box3" id="HuiDing"></div>
+		</div>
+		
+		
+		
 		</div>
 		
 	</body>
 </html>
+<!--<script type="text/javascript" src="js/tools.js"></script>-->
 <script type="text/javascript" src="js/tools.js"></script>
-
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 <script src="js/swiper-3.4.2.min.js"></script>
+<script type="text/javascript" src="js/dingBuXuanFu.js"></script>
+<script type="text/javascript" src="js/HuiDing.js"></script>
 <script type="text/javascript">
 	Slider();
+//	dingbuXuanFu();
 //	newPictur();//---更新图片
 $(function(){
 	$("#onlineMess").mouseover(function(){
@@ -591,20 +613,23 @@ $(function(){
 		$(".header-box4").hide();
 	});
 	
+
 	$("#title-haiwai").mouseover(function(){
+		
 		$(".title-11").show();
+		
 		$(".title-11").css("z-index","999");
 	})
 	$("#title-haiwai").mouseout(function(){
 		$(".title-11").hide();
 	});
 	//倒数第二栏目划过遮罩层出现
-	$(".last-act").mouseover(function(){
-		this.$(".last-zzc")[0].style.display="block";
-	})
-	$(".last-act").mouseout(function(){
-		this.$(".last-zzc")[0].style.display="none";
-	})
+//	$(".last-act").mouseover(function(){
+//		this.$(".last-zzc")[0].style.display="block";
+//	})
+//	$(".last-act").mouseout(function(){
+//		this.$(".last-zzc")[0].style.display="none";
+//	})
 	
 	
 //	//划过遮罩层出现
@@ -635,13 +660,7 @@ paginationClickable: true,
   })  
 }
 
-//center 今日更新
-function newPictur(){
-	for(let i=0;i<20;i++){
-		var boxDom=$create("div");
-		var cssStr="width:318px;height:232px;float:left;border:1px solid black;margin:11px;background: #f2f2f2;"
-		boxDom.style.cssText=cssStr;
-		$("#center").appendChild(boxDom);	
-	}
-}
+
+
+
 </script>

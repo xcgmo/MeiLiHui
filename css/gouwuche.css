@@ -1,0 +1,92 @@
+.g-center{
+	width:992px;
+	margin:0 auto;
+}
+.g-second{
+	width: 612px;
+	height: 52px;
+	line-height: 52px;
+	font-size: 12px;
+	color:#929292;
+	display: flex;
+	justify-content: space-between;
+}
+.g-picture{
+	width:480px;
+	height: 640px;
+	float: left;
+}
+.g-box1{
+	width:480px;
+	height:630px;
+	border:1px solid black;
+	float: left;
+	padding-left: 30px;
+}
+.IVYH{
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 36px;
+}
+.IVYH a{
+	font-size: 14px;
+	color: #929292;
+	float:right;
+}
+.IVYH img{
+	margin-bottom: -5px;
+}
+.g-price{
+	width:480px;
+	height: 70px;
+	line-height: 70px;
+	display: flex;
+	justify-content: space-between;
+}
+.g-price p{
+	font-size:20px;
+	font-weight: bold;
+}
+.g-price p span{
+	margin-left: 20px;
+}
+.g-box2{
+	width:480px;
+	height: 40px;
+	background: #eeeeee;
+	line-height: 40px;
+	font-size: 14px;
+}
+.g-box2 img{
+	margin-left:20px;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+.g-color{
+	line-height: 42px;
+	color:#929292;
+	font-size: 14px;
+	margin-top:20px;
+}
+.g-box3{
+	width: 58px;
+	height: 94px;
+}
+.g-color-picture{
+	width: 58px;
+	height: 76px;
+	border:1px solid #929292;
+}
+
+.g-color-picture img{
+	width:100%;
+	height:100%;
+}
+.g-box3 p{
+	width:60px;
+	color: #fff;
+	line-height: 18px;
+	background: #000000;
+	font-size: 14px;
+	text-align: center;
+}

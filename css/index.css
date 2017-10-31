@@ -112,37 +112,47 @@ a{
 	width:100%;
 	height:42px;
 	background: #000;
+	
+	z-index: 999;
+}
+.nav .nav-box{
+	width:1042px;
+	height: 42px;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
 	position: relative;
 }
-.nav .nav-box1{
+.nav-box1{
 	width:652px;
 	display: flex;
 	justify-content: space-around;
 	line-height:42px;
 	font-size: 14px;
-	margin-left: 192px;
-	position: relative;
+	/*margin-left: 192px;*/
+	/*position: relative;*/
 }
 .nav .nav-box2{
 	width:154px;
 	display: flex;
 	justify-content: space-between;
-	position: absolute;
-	right:36px;
-	top:0;
+	/*position: absolute;*/
+	/*right:36px;*/
+	/*top:0;*/
 	line-height: 42px;
-	margin-right: 192px;
+	/*margin-right: 192px;*/
 }
 .nav a{
 	color:#fff;
 }
+
 .nav .nav-box1 img{
 	display: block;
 	height:18px;
 	width:32px;
 	position: absolute;
-	top:0;
-	right:100px;
+	top:0px;
+	left:518px;
 }	
 .nav .nav-box1 a:hover{
 	color:#e51d1d;
@@ -154,6 +164,7 @@ a{
 	box-shadow: 1px 1px 1px 1px #c6c5c3;
 	background: #fff;
 	padding-top: 10px;
+	z-index: 9999;
 	display: none;
 }	
  .title-1{
@@ -186,16 +197,45 @@ a{
 	background: #fff;
 	position: absolute;
 	box-shadow:1px 1px 1px 1px #c6c5c3; ;
-	top:42px;
+	top:166px;
 	left:686px;
 	display: none;
-	z-index: 999;
+	
+}
+.HuiDing{
+	width:100px;
+	/*height:270px;*/
+	border:1px solid #ccc;
+	text-align: center;
+	position: fixed;
+	right:50px;
+	bottom:80px;
+	background: #fff;
+	
 }
 
-
-
-
-
+.H-box1{
+	height: 45px;
+	background: #000000;
+	text-align: center;
+	font-size: 14px;
+	line-height: 20px;
+	padding-top:5px;
+	border-bottom: 1px solid #ccc;
+}
+.HuiDing h3{
+	font-size: 12px;
+	line-height: 20px;
+	margin-top:5px;
+	
+}
+.H-box3{
+	height: 24px;
+	border-top:1px solid #ccc;
+	background:url(https://cdn11.mei.com/images/base_z.png) ;
+	background-position: -563px -1018px;
+	/*display: none;*/
+}
 
 
 

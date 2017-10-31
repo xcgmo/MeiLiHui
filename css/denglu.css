@@ -1,0 +1,149 @@
+.dengLu{
+	width:353px;
+	height: 255px;
+	border-bottom: 1px solid #a8aaab;
+	margin-top:100px;
+	margin-left: 450px;
+}
+.dengLu-box1{
+	width: 353px;
+	height: 35px;
+}
+.dengLu-box1 h2{
+	width: 130px;
+	display: block;
+	text-align: center;
+	font-size:16px;
+	float:left;
+	margin-left: 50px;
+}
+.dengLu-box1 span{
+	display: block;
+	width:163px;
+	float: left;
+	font-size:14px;
+	text-align: right;
+	margin-right: 10px;
+}
+.dengLu-checkbox{
+	width:263px;
+	height: 40px;
+	float: right;
+	line-height: 40px;
+	font-size: 12px;
+	/*border: 1px solid #000000;*/
+}
+.dengLu-checkbox input{
+	float: left;
+	margin-top: 14px;
+}
+.dengLu-checkbox p{
+	float: left;
+	
+}
+.dengLu-checkbox p a{
+	margin-left:126px;
+}
+.dengLu-checkbox p a:hover{
+	color:red;
+}
+.dengLu-LM{
+	margin-top: 28px;
+}
+.dengLu-LM p{
+	/*display: flex;
+	justify-content: space-between;*/
+	width:210px;
+	height: 40px;
+	margin-right: 53px;
+	margin-top:-34px;
+	float:right;
+}
+.dengLu-LM a{
+	display: inline-block;
+	width:60px;
+	height:20px;
+}
+.dengLu-LM a:nth-child(1){
+	background: url(https://cdn11.mei.com/images/login/icon_weibo.png) no-repeat;
+}
+.dengLu-LM a:nth-child(1):hover{
+	background: url(https://cdn11.mei.com/images/login/icon_weibo_03.png) no-repeat;
+}
+.dengLu-LM a:nth-child(2){
+	background: url(https://cdn11.mei.com/images/login/icon_zhifubao.png) no-repeat;
+}
+.dengLu-LM a:nth-child(2):hover{
+	background: url(https://cdn11.mei.com/images/login/icon_zhifubao_03.png) no-repeat;
+}
+.dengLu-LM a:nth-child(3){
+	margin-left:28px;
+	background: url(https://cdn11.mei.com/images/login/icon_weixin.png) no-repeat;
+}
+.dengLu-LM a:nth-child(3):hover{
+	background: url(https://cdn11.mei.com/images/login/icon_weixin_03.png) no-repeat;
+}
+
+.dengLu-box2{
+	width: 353px;
+	line-height: 25px;
+	padding-left:90px;
+	color: red;
+	font-size: 12px;
+}
+.dengLu-box3{
+	width:353px;
+	height: 245px;
+	/*border:1px solid black;*/
+}
+ .dengLu-input01{
+	width: 247px;
+	height: 30px;
+	margin:5px;
+	/*float: right;*/
+	padding-left:10px;
+
+}
+
+
+li{
+	width:353px;
+	height: 44px;
+}
+li span{
+	display: inline-block;
+	width:72px;
+	/*height:30px;*/
+	margin:5px;
+	font-size: 12px;
+	color:#000;
+	font-weight: 600;
+	text-align: right;
+	line-height: 44px;
+}
+.dengLu-input02{
+	width: 261px;
+	height: 32px;
+	margin-top:10px;
+	margin-right: 5px;
+	border:1px solid transparent;
+	background: red;
+	float:right;
+}
+
+.dengLu-box2{
+	width:266px;
+	height:200px;
+
+}
+.dengLu-box2 img{
+	float: left;
+}
+.dengLu-erWeiMa{
+	width:125px;
+	line-height: 20px;
+	font-size: 12px;
+	float:left;
+	margin-left:15px;
+	color:#000;
+}

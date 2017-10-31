@@ -35,9 +35,9 @@ body{
 }
 .login{
 	width:353px;
-	height: 370px;
+	height: 388px;
 	border-bottom: 1px solid #a8aaab;
-	margin-top:120px;
+	margin-top:100px;
 	margin-left: 450px;
 }
 .login-box1{
@@ -69,12 +69,81 @@ body{
 .login-box3{
 	width:353px;
 	height: 312px;
-	border:1px solid black;
+	/*border:1px solid black;*/
 }
-.login-box3 input{
-	width: 260px;
+ .input01{
+	width: 247px;
 	height: 30px;
 	margin:5px;
-	float: right;
-}
+	/*float: right;*/
+	padding-left:10px;
 
+}
+.input02{
+	width: 103px;
+	height: 30px;
+	/*margin:5px;*/
+	/*float: right;*/
+	padding-left:10px;
+
+}
+.input03{
+	width: 120px;
+	height: 30px;
+	margin:5px;
+	/*float: right;*/
+	padding-left:10px;
+
+}
+li{
+	width:353px;
+	height: 44px;
+}
+li span{
+	display: inline-block;
+	width:72px;
+	/*height:30px;*/
+	margin:5px;
+	font-size: 12px;
+	color:#000;
+	font-weight: 600;
+	text-align: right;
+	line-height: 44px;
+}
+.input04{
+	width: 261px;
+	height: 32px;
+	margin-top:10px;
+	margin-right: 5px;
+	border:1px solid transparent;
+	background: red;
+	float:right;
+}
+.login-box3 p{
+	width:266px;
+	float:right;
+	font-size:12px;
+	font-weight: blod;
+	line-height: 28px;
+}
+.login-box3 p a:hover{
+	color:red;
+}
+.login-box4{
+	width:266px;
+	height:200px;
+	/*border:1px solid #000000;*/
+	margin-left: 87px;
+}
+.login-box4 img{
+	float: left;
+	margin-top:22px;
+}
+.erWeiMa{
+	width:125px;
+	line-height: 20px;
+	font-size: 12px;
+	float:left;
+	margin-left:15px;
+	margin-top:42px;
+}
