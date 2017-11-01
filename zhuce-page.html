@@ -23,10 +23,11 @@
 		<p class="login-box2">新客专享 1000元现金券礼包</p>
 		<ul class="login-box3">
 			<li>
-				<span>账户名：</span><input type="text" value="手机号/邮箱" name="userName" id="userId" class="input01"><br/>
+				<span>账户名：</span><input type="text" value="手机号/邮箱" name="userName" id="userId" class="input01"><br/><span id="userIdStr" class="userIdStr" >该号码已被注册</span>
+				
 			</li>
 			<li>
-				<span>密码：</span><input type="text" value="请输入6-20个字符" name="userPass" id="userPass" class="input01"><br/>
+				<span>密码：</span><input type="password" value="请输入6-20个字符" name="userPass" id="userPass" class="input01"><br/>
 						
 				<!--<div class="safty">
 					<span>低</span>
@@ -70,7 +71,7 @@
 		
 		
 		<!--foot-->
-		<div class="footer" style="background: #fff;margin:0 auto;width:999px;height: 130px;margin-top: 160px;" >	
+		<div class="footer" style="background: #fff;margin:0 auto;width:999px;height: 130px;margin-top: 100px;" >	
 				<ul class="footer-box1">
 					<li><a class="a1">100%正品保证</a></li>
 					<li><a class="a2">满688免运费</a></li>
@@ -90,3 +91,52 @@
 		</div>
 	</body>
 </html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<!--<script type="text/javascript" src="tools.js"></script>-->
+<script type="text/javascript">
+	$(function(){		
+//		验证用户名是否存在
+		$("#checkMaTel").click(function(){
+			$.get(
+				"check.php",
+				{
+					"userId":$("#userId").val()	
+				},
+				function(data){
+					if(data=="1"){
+//						$("#showUser").html("√");
+						alert("该号码尚未未使用，您可以继续注册");
+						
+						
+					}else{
+//						$("#showUser").html("×");
+						$("#userIdStr").show();
+					}
+				}				
+			);
+			
+		});
+		
+		$("#zhuce").click(function(){
+			//1、
+			$.post(
+				"zhuce.php",
+				{
+					"userId":$("#userId").val(),
+					"userPass":$("#userPass").val()
+				},
+				function(data){					
+					if(data=="1"){
+//						$("#showUser").html("√");
+						alert("注册成功");
+					}else{
+//						$("#showUser").html("×");
+						alert("注册失败喽");
+					}
+				}
+			);
+		});
+	});
+</script>
+
+    

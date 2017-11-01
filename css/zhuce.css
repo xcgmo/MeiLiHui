@@ -35,7 +35,7 @@ body{
 }
 .login{
 	width:353px;
-	height: 388px;
+	/*height: 388px;*/
 	border-bottom: 1px solid #a8aaab;
 	margin-top:100px;
 	margin-left: 450px;
@@ -68,7 +68,7 @@ body{
 }
 .login-box3{
 	width:353px;
-	height: 312px;
+	/*height: 312px;*/
 	/*border:1px solid black;*/
 }
  .input01{
@@ -78,6 +78,13 @@ body{
 	/*float: right;*/
 	padding-left:10px;
 
+}
+.userIdStr{
+	/*display:block;*/
+	width:240px;
+	height:20px;
+	color:red;
+	/*border: 1px solid black;*/
 }
 .input02{
 	width: 103px;

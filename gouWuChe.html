@@ -112,9 +112,24 @@
 		</div>
 		
 		<!--图片-->
+		<div class="g-max-pic" id="g-max-picture">
 		<div class="g-picture">
 			<img src="https://cdn14.mei.com/product/SZ1-312-01271/SZ1-312-01271b.jpg@480w_640h_2e_80q" alt="" />
+		<div class="g-mirror" id="mirror"></div>
+		<div class="g-bigmirror" id="bigmirror"><img id="mrrirImg" src="https://cdn14.mei.com/product/SZ1-312-01271/SZ1-312-01271b.jpg@480w_640h_2e_80q"/></div>
+		</div>	
+			
+		<!--小图片-->
+		<div class="g-xiaoPicture">
+			<div><img src="https://cdn15.mei.com/product/SZ1-312-01271/SZ1-312-01271a.jpg@80w_107h_2e_80q" alt="" /></div>
+			<div><img src="https://cdn14.mei.com/product/SZ1-312-01271/SZ1-312-01271b.jpg@80w_107h_2e_80q" alt="" /></div>
+			<div><img src="https://cdn15.mei.com/product/SZ1-312-01271/SZ1-312-01271e.jpg@80w_107h_2e_80q" alt="" /></div>
+			<div><img src="https://cdn13.mei.com/product/SZ1-312-01271/SZ1-312-01271c.jpg@80w_107h_2e_80qs" alt="" /></div>
 		</div>
+		
+		</div>
+		
+		
 		<div class="g-box1">
 			<p class="IVYH">IVYHOUSE <a href=""><img src="https://cdn11.mei.com/images/detail/share_weibo.png" alt="" />分享</a></p>
 			<p style="font-size: 14px;color: #929292;">西瓜红色立领拉链女童棉马甲 </p>
@@ -129,7 +144,41 @@
 				<div class="g-color-picture"><img src="https://cdn15.mei.com/product/SZ1-312-01271/SZ1-312-01271a.jpg@480w_640h_2e_80q" alt="" /></div>
 				<p>灰色</p>
 			</div>
+			<p class="g-chiMa">选择尺码</p>
+			<ul class="g-HaoMa">
+				<li>100</li>
+				<li>110</liimg>
+				<li>120</li>
+				<li>130</li>
+				<li>140</li>
+				<li>150</li>
+				<li>160</li>
+			</ul>
+			<p class="g-num">数量</p>
+			<input type="button" name="" id="" value="-" class="g-input"/><span class="g-add">1</span><input type="button" name="" id="" value="+" class="g-input"/>
+			<p class="g-date">预计出库日期：<span>2017年11月11日</span></p><br />
+			<div class="g-gouwu">
+				<div class="g-jiaru"><img src="https://cdn11.mei.com/images/detail/icon_buy.png" alt="" />加入购物袋</div>
+				<div class="g-goumai">立即购买</div>
+			</div>
+			<div class="g-Time">
+				<div class="g-Time-1">
+					<p>限时抢购</p>
+					<p>活动剩余</p>
+				</div>
+				<div class="g-Time-2">
+					<span>16</span>天
+					<span>14</span>时
+					<span>02</span>分
+					<span>05</span>秒
+				</div>
+			</div>
+			<div class="g-7tui">
+			<p><img src="https://cdn11.mei.com/images/detail/icon_real100.png"/>正品保证</p>
+			<p><img src="https://cdn11.mei.com/images/detail/icon_7daysrma.png"/>7天无理由退货</p>
 		</div>
+		</div>
+		
 		
 		
 		
@@ -143,3 +192,19 @@
 		</div><!-----最外边的mmax-->
 	</body>
 </html>
+<script type="text/javascript" src="js/tools.js"></script>
+<script type="text/javascript" src="js/mirror.js"></script>
+<script type="text/javascript">
+	window.onload = function(){	
+//domObj,width,height,multiple,bigMirrorDom,bigImgDom	
+	bigMirror($("#g-max-picture"),480,640,3,$("#mirror"),$("#mrrirImg"));
+	$("#g-max-picture").onmouseover=function(){
+		$("#mirror").style.display="block";
+		$("#bigmirror").style.display="block";
+	}
+	$("#g-max-picture").onmouseout=function(){
+		$("#mirror").style.display="none";
+		$("#bigmirror").style.display="none";
+	}
+}
+</script>
